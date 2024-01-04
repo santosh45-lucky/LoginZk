@@ -1,0 +1,359 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+ <style>
+
+.intbox-style {
+            width: 30px;
+            height:10px
+            background-color: black;
+            padding:5px;
+        }
+        row{
+        height:5px;
+        }
+
+    </style>
+<window title="Welcome to Gaming World" style="color:red" border="normal" apply="com.game.GuessMain">
+
+<tabbox>
+<tabs>
+<tab label="Guess the word"></tab>
+<tab label="Tic Tac Toe"></tab>
+<tab label="Sudoku Game"></tab>
+</tabs>
+<tabpanels>
+<tabpanel style="overflow:auto">
+<div height="350px" width="100%" >
+<grid>
+<rows>
+<row>
+<label value="Jumbled Word"></label>
+</row>
+<row><label id="label1" style="width:200px;height:100px;"></label>
+Enter text :
+<textbox id="textbox2" style="width:200px;height:50px;"></textbox>
+</row>
+<row>
+<button id="start" label="Start"></button>
+<button id="check" label="Check"></button>
+
+</row>
+
+</rows>
+</grid>
+</div>
+</tabpanel>
+
+<tabpanel>
+<div height="350px" width="100%">
+<label value="Player 1:X"></label>
+
+<label value="Player 2:O"></label>
+<separator></separator>
+<button id="btn1"  style="width:80px;height:80px"></button>
+<button id="btn2" style="width:80px;height:80px"></button>
+<button id="btn3" style="width:80px;height:80px"></button>
+<separator></separator>
+<button id="btn4" style="width:80px;height:80px"></button>
+<button id="btn5" style="width:80px;height:80px"></button>
+<button id="btn6" style="width:80px;height:80px"></button>
+<separator></separator>
+<button id="btn7" style="width:80px;height:80px"></button>
+<button id="btn8" style="width:80px;height:80px"></button>
+<button id="btn9" style="width:80px;height:80px"></button>
+<separator></separator>
+<button id="btn10" label="reset" ></button>
+</div>
+</tabpanel>
+<tabpanel>
+ 
+<div height="50%" width="80%">
+<button id="startButton" label="start"></button>
+        <button label="Check" id="checkButton"></button>
+        <button label="Reset" id="resetButton"/>
+        <grid>
+            <rows>
+                <row>
+                    <cell>
+                        <intbox sclass="intbox-style" value="5" id="cell00"  constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell01"  constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell02"  constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell03"  constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell04" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell05" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell06"  constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell07" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell08"  constraint="no empty, no zero"/>
+                    </cell>
+                </row>
+                
+                <row>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell10"  constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell11" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell12" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell13" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell14" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell15" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell16" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell17" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell18" constraint="no empty, no zero"/>
+                    </cell>
+                </row>
+                
+                
+                <row>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell20" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell21" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell22" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell23" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell24" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell25" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell26" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell27" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell28" constraint="no empty, no zero"/>
+                    </cell>
+                </row>
+                
+                
+                <row>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell30" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell31" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell32" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell33" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell34" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell35" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell36" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell37" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell38" constraint="no empty, no zero"/>
+                    </cell>
+                </row>
+                
+                
+                
+                <row>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell40" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell41" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell42" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell43" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell44" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell45" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell46" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell47" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell48" constraint="no empty, no zero"/>
+                    </cell>
+                </row>
+                
+                <row>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell50" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell51" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell52" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell53" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell54" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell55" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell56" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell57" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell58" constraint="no empty, no zero"/>
+                    </cell>
+                </row>
+                
+                <row>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell60" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell61" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell62" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell63" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell64" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell65" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell66" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell67" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell68" constraint="no empty, no zero"/>
+                    </cell>
+                </row>
+                
+                
+                <row>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell70" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell71" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell72" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell73" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell74" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell75" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell76" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell77" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell78" constraint="no empty, no zero"/>
+                    </cell>
+                </row>
+                
+                <row>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell80" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell81" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell82" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell83" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell84" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell85" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell86" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell87" constraint="no empty, no zero"/>
+                    </cell>
+                    <cell>
+                        <intbox sclass="intbox-style" id="cell88" constraint="no empty, no zero"/>
+                    </cell>
+                </row>
+               
+            </rows>
+        </grid>
+        </div>
+</tabpanel>
+</tabpanels>
+</tabbox>
+<button id="logoutButton" label="Logout"></button>
+</window>
+</zk>
